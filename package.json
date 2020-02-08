@@ -2,13 +2,17 @@
   "name": "seatraveler",
   "version": "1.0.0",
   "description": "Landing for motorboat rent company",
-  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run build",
+    "build": "webpack -p && webpack-dev-server"
   },
   "author": "RP",
   "license": "ISC",
   "dependencies": {
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   }
 }
