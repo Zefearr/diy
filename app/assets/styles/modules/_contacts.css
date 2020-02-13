@@ -3,13 +3,17 @@
     position: relative;
     margin:auto;
     &__title {
-        font-size:28pt;
+        font-size:22pt;
         color:#fff;
         margin:0;
         padding:0;
         text-align: center;
-        padding-bottom:48pt;
+        padding-bottom:24pt;
         text-shadow:1px 1px 1px #222;
+        @media(min-width:1024px) {
+            font-size:32pt;
+            padding-bottom:48pt;
+        }
     }
     &__form {
         padding:12pt;

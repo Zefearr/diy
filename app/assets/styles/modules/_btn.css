@@ -1,4 +1,13 @@
 .btn {
+
+    &--centered {
+        margin-left:auto; 
+        margin-right:auto;
+       
+        @media(min-width:1024px) {
+           margin:0;
+        }
+    }
     height:50px;
         text-decoration:none;
         display:flex;
