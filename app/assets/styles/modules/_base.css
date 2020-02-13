@@ -1,0 +1,128 @@
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    position: relative;
+    max-width:1280px;
+    margin:auto;
+    padding:0 12pt;
+    &::after {
+        content:'';
+        display:block;
+        clear: both;
+    }
+    @media(min-width:1366px) {
+        padding:0;
+    }
+    
+    &--large {
+        position: relative;
+        max-width: 1920px;
+    }
+    &--narrow {  
+        max-width:920px;
+    }
+    &--banner {
+        padding:0;
+    }
+    &--flex {
+        display:flex;
+    }
+    &--full {
+        max-width:980px;
+    }
+}
+#map {
+    width:300px;
+    height:400px;
+    display:block;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    margin-bottom:24pt;
+    @media(min-width:1024px) {
+        width:100%;
+    }
+
+}
+.page-section {
+    position: relative;
+    width:100%;
+    padding: 2rem 0;
+    overflow: hidden;
+    &--contacts {
+        background-color:#7cc1fa;
+        padding-bottom:48pt;
+    }
+    &--team {
+        background-color:#c6e4fd;
+        padding-bottom:64pt;
+        padding-top:48pt;
+        
+    }
+    &--gallery {
+        padding-bottom:48pt;
+    }
+   &--beginning {
+       padding-bottom:64pt;
+   }
+   &--testimonials {
+       padding: 64pt 0;
+       background-color:#f1ffff;
+   }
+    &--testimonials::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 48px;
+        top: 0;
+        position: absolute;
+        background: linear-gradient(-1deg, transparent 49%, #c6e4fd 50%);
+        right: 0;
+        z-index: 1;
+    }
+    &--testimonials::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 48px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        background-image: linear-gradient(1deg, #F1F8FF 49%, transparent 50%);
+    }
+    
+}
+.wave {
+    width: 1000px;
+    height: 825px;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 35%;
+    background: rgba(255, 255, 255, 0.75);
+    animation: wave 45s infinite linear;
+  }
+  
+  @keyframes wave {
+    from { transform: rotate(0deg);}
+    from { transform: rotate(360deg);}
+  }
+ 
+  
+  .reveal-item {
+      opacity:0;
+      transition:.5s all ease;
+      transform:translateY(10%);
+      &--is-visible {
+          opacity:1;
+          transform:translateY(0);
+      }
+  }
+  .swiper-container {
+    width: 100%;
+    height: auto;
+}

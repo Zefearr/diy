@@ -1,0 +1,27 @@
+.gallery {
+    &__title {
+        font-size:32pt;
+        color:#333;
+        text-align: center;
+        margin:0;
+        padding:36pt 0;
+        padding-bottom:48pt;
+        
+    }
+    img {
+        transition:.2s all ease;
+        cursor: pointer;
+        &:hover {
+            transform:scale(1.05);
+        }
+    }
+    display:grid;
+    grid-gap:4pt;
+    grid-template-columns: repeat(2, 1fr);
+    @media(min-width:768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media(min-width:1024px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

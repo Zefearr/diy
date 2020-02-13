@@ -1,0 +1,128 @@
+.main-banner {
+ 
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    
+    &__number-container {
+        position: absolute;
+        right:15%;
+        bottom:7%;
+        z-index: 1;
+        span {
+            font-size:14pt;
+            box-shadow:1px 2px 2px #222;
+        }
+    }
+    img {
+        display: block;
+        margin:auto;
+        position: relative;
+    }
+    &__text-content {
+        width:100%;
+        position: absolute;
+        left:50%;
+        top:50%;
+        text-align:center;
+        transform:translateY(-50%) translateX(-50%);
+    }
+    &__title {
+        color:#fefefe;
+        font-size:1.3rem;
+        font-weight: 700;
+        text-shadow: 1px 2px 1px #222;
+        @media(min-width:1024px) {
+            font-size:2rem;
+        }
+        @media(min-width:1280px) {
+            font-size:2.6rem;
+        }
+    }
+    &__subtitle {
+        color:#fefefe;
+        font-size:1rem;
+        font-weight: 400;
+        text-shadow: 1px 2px 1px #222;
+        @media(min-width:1024px) {
+            font-size:1.3rem;
+            font-weight: 400;
+        }
+    }
+
+    &__phone {
+        position: absolute;
+        right:15%;
+        bottom:7%;
+        
+      
+
+    }
+    &__number {      
+        color:#fff;
+        font-weight: 900;
+        letter-spacing: 1px;
+        font-size:1.4rem;
+                
+    }
+    &__phone-icon {
+        width:36px;
+        height:36px;
+        display: block;
+        border-radius: 5px;
+        background:url('./assets/images/phone-24px.svg') center no-repeat;
+        float:left;
+        margin-right:12pt;
+    }
+    &__marker-icon {
+        width:36px;
+        height:36px;
+        display: block;
+        border-radius: 5px;
+        background:url('./assets/images/marker.svg') center no-repeat;
+        float:left;
+       
+    }
+    &__adress {
+        text-decoration: none;
+        color:#fe6233;
+        display:inline-block;
+        margin-top:6px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        font-size:0.8rem;
+        text-shadow:1px 2px 1px #333;
+        @media(min-width:1024px) {
+            font-size:1.4rem;
+        }
+    }
+    &__marker {
+        position: absolute;
+        left:50%;
+        min-width:70%;
+        text-align:center;
+        transform:translateX(-50%);
+        bottom:7%;
+        @media(min-width:1024px) {
+        left:15%;
+        bottom:7%;
+        min-width:auto;
+        }
+    }
+    &__arrow {
+        position: absolute;
+        right:15%;
+        bottom:5%;
+        width:48px;
+        height:48px;
+        display:block;
+        background:url('./assets/images/arrow.svg') center no-repeat;
+        opacity: 0;
+        transition:.1s all ease;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

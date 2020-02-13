@@ -1,0 +1,27 @@
+@import 'modules/_base.css';
+@import 'modules/_main-banner';
+@import 'normalize.css';
+@import 'modules/_site-header'; 
+@import 'modules/_btn';
+@import 'modules/_beginning';
+@import 'modules/_row';
+@import 'modules/_team';
+@import 'modules/_gallery';
+@import 'modules/_contacts';
+@import 'modules/_site-footer';
+@import 'modules/_testimonials';
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+    background-color:#F1F8FF;
+}
+img { 
+    max-width:100%;
+    height:auto;
+}
+
+* {
+    box-sizing:border-box;
+
+}
